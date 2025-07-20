@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Update Book</h2>
+<form method="POST">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" value="{{ book[1] }}" required>
+
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author" value="{{ book[2] }}" required>
+
+    <label for="year">Year:</label>
+    <input type="number" id="year" name="year" value="{{ book[3] }}" required>
+
+    <button type="submit">Update Book</button>
+</form>
+{% endblock %}
